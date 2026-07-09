@@ -21,6 +21,8 @@ import State1 from "./state/State1";
 import Conditionalstatement from "./conditionalstatement/Conditionalstatement";
 import Login from "./conditionalstatement/Login";
 import Map from "./map/Map";
+import Products from "./pages/Products";
+import ProductDetailPage from "./pages/ProductDetailPage";
 
 
 export default function App() {
@@ -36,6 +38,8 @@ export default function App() {
         <Route path="/props1" element={<Props1 />} />
         <Route path="/state" element={<State />} />
         <Route path="/state1" element={<State1 />} />
+        <Route path="/products" element={<Products />} />
+        <Route path="/detail/:id" element={<ProductDetailPage />} />
         <Route path="/map" element={<Map />} />
         <Route path="/conditional" element={<Conditionalstatement />} />
         <Route path="/login" element={<Login />} />
